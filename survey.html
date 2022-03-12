@@ -1,0 +1,157 @@
+<!--Author: Ishtiaque Matin CST8285-->
+
+<!--it tells the browser about what document type to expect-->
+<!DOCTYPE html>
+
+<!--language used in this webpage-->
+<html lang="en">
+
+<!--title and other info-->
+
+<head>
+    <!--character set used in this webpage-->
+    <meta charset="UTF-8" />
+
+    <!--title of the webpage-->
+    <title> Survey </title>
+
+    <!--style for the table-->
+    <!--th = table header-->
+    <style>
+        table,
+        th {
+            border: 2px solid blue
+        }
+    </style>
+</head>
+
+<!--change font, align text to center-->
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+    <!--form created-->
+    <form action="survey.php" method="GET" enctype="text/plain">
+
+        <!--add blank line-->
+        <br><br>
+
+        <!--fieldset created-->
+        <fieldset style="border-color: black;">
+
+            <!--add blank line-->
+            <br>
+
+            <!--table creted and centered-->
+            <table style="margin-left: auto;margin-right: auto;">
+
+                <!--new table row-->
+                <tr>
+                    <!--new cell in a row-->
+                    <td>
+                        <!--add blank line-->
+                        <br>
+
+                        <b><u><label style="text-align: left;margin-left: 2%;font-size: 20px;"> Name </label></u></b>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                        <!--first name as default value for the first name and disabled-->
+                        <label for="fname"> First Name </label>
+                        <input type="text" id="fname" name="fname" value=" Ishtiaque " disabled>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                        <!--last name as default value for the last name and size set to 30 character-->
+                        <label for="lname"> Last Name </label>
+                        <input type="text" id="lname" name="lname" value=" Matin " size="30">
+
+
+
+                    </td>
+                </tr>
+
+                <!--new table row-->
+                <tr>
+                    <!--new cell in a row-->
+                    <td>
+
+                        <!--add blank line-->
+                        <br>
+
+                        <label for="shirt">Type of Shirt:</label>
+
+                        <!--drop down menu with Sleeveless selected and three different items-->
+                        <select id="shirt" name="shirt">
+                            <option value="collared">Collared</option>
+                            <option value="sleeveless" selected>Sleeveless </option>
+                            <option value="tshirt">Polo</option>
+                            <option value="tshirt">T-Shirt</option>
+                        </select>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                        <!--radio button with medium checked-->
+                        <label><b> Size: </b></label>
+                        <input type="radio" id="size1" name="size1" value="Large" /><label for="size1"> Large </label>
+
+                        <input type="radio" id="size2" name="size2" value="Medium" checked /><label for="size2">Medium
+                        </label>
+
+                        <input type="radio" id="size3" name="size3" value="Small" /> <label for="size3"> Small </label>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                        <!--checkbox-->
+                        <label><b> Color: </b></label>
+                        <input type="checkbox" id="color1" name="color1" value="Red"><label for="color1"> Red </label>
+                        <input type="checkbox" id="color2" name="color2" value="Navy"><label for="color2"> Navy
+                        </label>
+                        <input type="checkbox" id="color3" name="color3" value="Black"> <label for="color3"> Black
+                        </label>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                        <!--text area with 4 rows and 40 columns-->
+                        <label for="comment"><b> Comments ? </b></label><br>
+                        <textarea name="comment" id="comment" rows="4" cols="40"
+                            style="overflow-y: scroll; "></textarea>
+
+                    </td>
+                </tr>
+
+                <!--new table row-->
+                <tr>
+                    <!--new cell in a row-->
+                    <td>
+
+                        <!--add blank line-->
+                        <br>
+
+                        <!--submit button-->
+                        <button type="submit"> Buy Now! </button>
+
+                        <!--reset button-->
+                        <button type="reset"> Reset </button>
+
+                        <!--add blank line-->
+                        <br><br>
+
+                    </td>
+                </tr>
+
+            </table>
+
+            <!--add blank line-->
+            <br>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
+<!--validated by W3C Validator-->
